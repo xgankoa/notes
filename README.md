@@ -7,3 +7,10 @@
 - CLONE_NEWNET
 - CLONE_NEWUSER
 - CLONE_NEWCGROUP
+
+- tcpdump
+
+```bash
+tcpdump src 10.0.0.1 and port 80 -i eth0 -w eth0.pcap
+```
+
