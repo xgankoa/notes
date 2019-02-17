@@ -1,14 +1,6 @@
-> Is that for here or to go?
+> What can I get for you?
 
-- To go, please.
-
-> Is that for here or to go?
-
-- To go, please.
-
-> Is that for here or to go?
-
-- To go, please.
+- I'd like a number 1, please.
 
 > Is that for here or to go?
 
