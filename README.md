@@ -4,7 +4,7 @@
 
 > Anything else?
 
-- No, That's all.
+- That's all.
 
 > Is that for here or to go?
 
