@@ -4,4 +4,4 @@
 
 > Is that for here or to go?
 
-- For here.
+- To go, please.
