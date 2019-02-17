@@ -2,7 +2,7 @@
 
 - I'd like a number 1.
 
-> Anything else?
+> Can I get you anything else?
 
 - That's all.
 
