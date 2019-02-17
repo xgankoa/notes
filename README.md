@@ -1,6 +1,6 @@
-> Anything else?
+> What can I get for you?
 
-- No. That's all.
+- I'd like a number 1, please.
 
 > Is that for here or to go?
 
