@@ -40,3 +40,9 @@ echo never > /sys/kernel/mm/transparent_hugepage/enabled
 tcpdump src 10.0.0.1 and port 80 -i eth0 -w eth0.pcap
 ```
 
+---
+
+A: Is that for here or to go?
+B: To go, please.
+
+
