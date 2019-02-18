@@ -1,6 +1,10 @@
 > What can I get for you?
 
-- I'd like a number 1.
+- I'd like to have a number 1.
+
+> What would you like to drink?
+
+- Coke.
 
 > Can I get you anything else?
 
