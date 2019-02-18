@@ -13,3 +13,7 @@
 > Is that for here or to go?
 
 - For here.
+
+> Your total comes to $8.16.
+
+- Here's $10.
