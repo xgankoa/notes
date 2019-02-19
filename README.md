@@ -7,7 +7,7 @@
 - CLONE_NEWNET
 - CLONE_NEWUSER
 
-# Croups
+# Cgroups
 
 ```go
 package main
@@ -37,6 +37,6 @@ func main() {
 
 ```bash
 mkdir /sys/fs/cgroup/memory/4ab173fbb411
-echo 1048576 > /sys/fs/cgroup/memory/4ab173fbb411/memory.limit_in_bytes
+echo 10485760 > /sys/fs/cgroup/memory/4ab173fbb411/memory.limit_in_bytes
 echo 1234 >> /sys/fs/cgroup/memory/4ab173fbb411/tasks
 ```
