@@ -1,19 +1,42 @@
-> What can I get for you?
+# Namespaces
 
-- I'd like to have a number 1.
+- CLONE_NEWNS
+- CLONE_NEWUTS
+- CLONE_NEWIPC
+- CLONE_NEWPID
+- CLONE_NEWNET
+- CLONE_NEWUSER
 
-> What would you like to drink?
+# Croups
 
-- Coke.
+```go
+package main
 
-> Can I get you anything else?
+func main() {
+	for {
+	}
+}
+```
 
-- That's all.
+```bash
+mkdir /sys/fs/cgroup/cpu/4ab173fbb411
+echo 10000 > /sys/fs/cgroup/cpu/4ab173fbb411/cpu.cfs_quota_us
+echo 1234 >> /sys/fs/cgroup/cpu/4ab173fbb411/tasks
+```
 
-> Is that for here or to go?
+```go
+package main
 
-- For here.
+func main() {
+	m := map[int]int{}
+	for i := 0; ; i++ {
+		m[i] = i
+	}
+}
+```
 
-> Your total comes to $8.16.
-
-- Here's $10.
+```bash
+mkdir /sys/fs/cgroup/memory/4ab173fbb411
+echo 1048576 > /sys/fs/cgroup/memory/4ab173fbb411/memory.limit_in_bytes
+echo 1234 >> /sys/fs/cgroup/memory/4ab173fbb411/tasks
+```
