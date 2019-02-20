@@ -12,3 +12,11 @@ ${dfs.namenode.name.dir}
 ```
 
 # ZKFailoverController
+
+- HealthMonitor
+- ActiveStandbyElector
+
+```
+/hadoop-ha/${dfs.nameservices}/ActiveStandbyElectorLock
+/hadoop-ha/${dfs.nameservices}/ActiveBreadCrumb
+```
