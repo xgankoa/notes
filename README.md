@@ -13,10 +13,10 @@ ${dfs.namenode.name.dir}
 
 # ZKFailoverController
 
-- HealthMonitor
 - ActiveStandbyElector
+- HealthMonitor
 
 ```
-/hadoop-ha/${dfs.nameservices}/ActiveStandbyElectorLock
 /hadoop-ha/${dfs.nameservices}/ActiveBreadCrumb
+/hadoop-ha/${dfs.nameservices}/ActiveStandbyElectorLock
 ```
