@@ -1,22 +1,42 @@
-# NameNode
+# Namespaces
 
+- CLONE_NEWNS
+- CLONE_NEWUTS
+- CLONE_NEWIPC
+- CLONE_NEWPID
+- CLONE_NEWNET
+- CLONE_NEWUSER
+
+# Cgroups
+
+```bash
+mkdir /sys/fs/cgroup/cpu/4ab173fbb411
+echo 10000 > /sys/fs/cgroup/cpu/4ab173fbb411/cpu.cfs_quota_us
+echo $$ >> /sys/fs/cgroup/cpu/4ab173fbb411/tasks
 ```
-${dfs.namenode.name.dir}
-|-- current
-|-- |-- edits_0000000019039865314-0000000019039882927
-|-- |-- edits_inprogress_0000000019039882928
-|-- |-- fsimage_0000000019039882927
-|-- |-- fsimage_0000000019039882927.md5
-|-- |-- seen_txid    // 19039882928
-|-- in_use.lock
+
+```go
+package main
+
+func main() {
+	for {
+	}
+}
 ```
 
-# ZKFailoverController
-
-- ActiveStandbyElector
-- HealthMonitor
-
+```bash
+mkdir /sys/fs/cgroup/memory/4ab173fbb411
+echo 10485760 > /sys/fs/cgroup/memory/4ab173fbb411/memory.limit_in_bytes
+echo $$ >> /sys/fs/cgroup/memory/4ab173fbb411/tasks
 ```
-/hadoop-ha/${dfs.nameservices}/ActiveBreadCrumb
-/hadoop-ha/${dfs.nameservices}/ActiveStandbyElectorLock
+
+```go
+package main
+
+func main() {
+	m := map[int]int{}
+	for i := 0; ; i++ {
+		m[i] = i
+	}
+}
 ```
