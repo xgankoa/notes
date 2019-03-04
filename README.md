@@ -95,3 +95,43 @@ def dfs(graph, start):
 
 dfs(graph, 'A')
 ```
+
+```python
+#!/usr/bin/env python
+
+
+graph = {
+    'A': {'B', 'C'},
+    'B': {'A', 'D'},
+    'C': {'A', 'D', 'E'},
+    'D': {'B', 'C', 'F'},
+    'E': {'C', 'F'},
+    'F': {'D', 'E', 'G'},
+    'G': {'F'}
+}
+
+
+def dfs(graph, vertex, visited):
+    print(vertex)
+    for v in graph[vertex]:
+        if v not in visited:
+            visited.add(v)
+            dfs(graph, v, visited)
+
+
+dfs(graph, 'A', {'A'})
+
+
+def dfs(graph, root):
+    visited, stack = {root}, [root]
+    while stack:
+        vertex = stack.pop()
+        print(vertex)
+        for v in graph[vertex]:
+            if v not in visited:
+                visited.add(v)
+                stack.append(v)
+
+
+dfs(graph, 'A')
+```
