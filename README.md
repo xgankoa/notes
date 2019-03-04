@@ -82,8 +82,8 @@ def dfs(graph, vertex, visited):
 dfs(graph, 'A', {'A'})
 
 
-def dfs(graph, root):
-    visited, stack = {root}, [root]
+def dfs(graph, start):
+    visited, stack = {start}, [start]
     while stack:
         vertex = stack.pop()
         print(vertex)
