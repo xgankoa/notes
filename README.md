@@ -211,20 +211,22 @@ print(search([-2, 0, 1, 1, 3, 8], 2))
 #!/usr/bin/env python
 
 
+#!/usr/bin/env python
+
+
 def search(array, value):
-    low, high = 0, len(array) - 1
-    while low < high:
-        i = (low + high) // 2
+    min, max = 0, len(array) - 1
+    while min <= max:
+        i = (min + max) // 2
         if array[i] < value:
-            low = i + 1
+            min = i + 1
         elif array[i] > value:
-            high = i - 1
+            max = i - 1
         else:
             return i
-    return -1
+    return None
 
 
-print(search([-2, 0, 1, 1, 3, 8], 1))
-
+print(search([-1, 0, 3, 7, 11, 17], 3))
 
 ```
