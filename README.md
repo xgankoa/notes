@@ -122,16 +122,31 @@ def dfs(graph, vertex, visited):
 dfs(graph, 'A', {'A'})
 
 
-def dfs(graph, vertex):
-    visited, stack = {vertex}, [vertex]
-    while stack:
-        vertex = stack.pop()
+#!/usr/bin/env python
+
+
+graph = {
+    'A': {'B', 'C'},
+    'B': {'A', 'D'},
+    'C': {'A', 'D', 'E'},
+    'D': {'B', 'C', 'F'},
+    'E': {'C', 'F'},
+    'F': {'D', 'E', 'G'},
+    'G': {'F'}
+}
+
+
+def bfs(graph, start):
+    visited, queue = {root}, [root]
+    while queue:
+        vertex = queue.pop(0)
         print(vertex)
         for v in graph[vertex]:
             if v not in visited:
                 visited.add(v)
-                stack.append(v)
+                queue.append(v)
 
 
-dfs(graph, 'A')
+bfs(graph, 'A')
+
 ```
