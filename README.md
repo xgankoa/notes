@@ -136,17 +136,29 @@ graph = {
 }
 
 
-def bfs(graph, start):
-    visited, queue = {root}, [root]
-    while queue:
-        vertex = queue.pop(0)
+def dfs(graph, vertex, visited=None):
+    print(vertex)
+    if visited is None:
+        visited = {vertex}
+    for v in graph[vertex]:
+        if v not in visited:
+            visited.add(v)
+            dfs(graph, v, visited)
+
+
+dfs(graph, 'A')
+
+
+def dfs(graph, root):
+    visited, stack = {root}, [root]
+    while stack:
+        vertex = stack.pop()
         print(vertex)
         for v in graph[vertex]:
             if v not in visited:
                 visited.add(v)
-                queue.append(v)
+                stack.append(v)
 
 
-bfs(graph, 'A')
-
+dfs(graph, 'A')
 ```
