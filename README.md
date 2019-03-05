@@ -229,4 +229,22 @@ def search(array, value):
 
 print(search([-1, 0, 3, 7, 11, 17], 3))
 
+
+#!/usr/bin/env python
+
+
+def search(array, value):
+    low, high = 0, len(array) - 1
+    while low <= high:
+        i = (low + high) // 2
+        if array[i] < value:
+            low = i + 1
+        elif array[i] > value:
+            high = i - 1
+        else:
+            return i
+    return None
+
+
+print(search([-1, 0, 3, 7, 11, 17], 3))
 ```
