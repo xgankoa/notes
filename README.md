@@ -161,4 +161,32 @@ def dfs(graph, root):
 
 
 dfs(graph, 'A')
+
+#!/usr/bin/env python
+
+
+graph = {
+    'A': {'B', 'C'},
+    'B': {'A', 'D'},
+    'C': {'A', 'D', 'E'},
+    'D': {'B', 'C', 'F'},
+    'E': {'C', 'F'},
+    'F': {'D', 'E', 'G'},
+    'G': {'F'}
+}
+
+
+def bfs(graph, root):
+    queue, visited = [root], {root}
+    while queue:
+        vertex = queue.pop(0)
+        print(vertex)
+        for v in graph[vertex]:
+            if v not in visited:
+                visited.add(v)
+                queue.append(v)
+
+
+bfs(graph, 'A')
+
 ```
