@@ -208,4 +208,23 @@ def search(array, value):
 print(search([-2, 0, 1, 1, 3, 8], 2))
 
 
+#!/usr/bin/env python
+
+
+def search(array, value):
+    low, high = 0, len(array) - 1
+    while low < high:
+        i = (low + high) // 2
+        if array[i] < value:
+            low = i + 1
+        elif array[i] > value:
+            high = i - 1
+        else:
+            return i
+    return -1
+
+
+print(search([-2, 0, 1, 1, 3, 8], 1))
+
+
 ```
