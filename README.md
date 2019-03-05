@@ -189,4 +189,23 @@ def bfs(graph, root):
 
 bfs(graph, 'A')
 
+#!/usr/bin/env python
+
+
+def search(array, value):
+    min, max = 0, len(array) - 1
+    while min < max:
+        i = (max + min) // 2
+        if array[i] < value:
+            min = i + 1
+        elif array[i] > value:
+            max = i - 1
+        else:
+            return i
+    return -1
+
+
+print(search([-2, 0, 1, 1, 3, 8], 2))
+
+
 ```
