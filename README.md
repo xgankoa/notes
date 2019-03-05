@@ -1,3 +1,9 @@
+# Commands
+
+```bash
+docker exec -it <container> bash
+```
+
 # Namespaces
 
 - CLONE_NEWNS
