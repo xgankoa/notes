@@ -1,10 +1,10 @@
 - sysctl
 
 ```bash
-echo 1024 > /proc/sys/net/core/somaxconn
-echo 1 > /proc/sys/net/ipv4/ip_forward
-echo 3 > /proc/sys/vm/drop_caches
-echo 1 > /proc/sys/vm/overcommit_memory
+sysctl -w net.core.somaxconn=1024
+sysctl -w net.ipv4.ip_forward=1
+sysctl -w vm.drop_caches=3
+sysctl -w vm.overcommit_memory=1
 ```
 
 - tcpdump
