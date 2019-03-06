@@ -1,4 +1,4 @@
-```
+```yml
 tolerations:
 - key: "key"
   operator: "Equal"
