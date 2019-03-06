@@ -1,9 +1,5 @@
-# ZKFailoverController
-
-- ActiveStandbyElector
-- HealthMonitor
-
-```
-/hadoop-ha/${dfs.nameservices}/ActiveBreadCrumb
-/hadoop-ha/${dfs.nameservices}/ActiveStandbyElectorLock
-```
+tolerations:
+- key: "key"
+  operator: "Equal"
+  value: "value"
+  effect: "NoSchedule"
