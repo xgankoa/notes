@@ -1,4 +1,4 @@
-```yaml
+```
 tolerations:
 - key: "key"
   operator: "Equal"
