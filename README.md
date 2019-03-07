@@ -1,3 +1,5 @@
+# CPU
+
 ```bash
 mkdir /sys/fs/cgroup/cpu/4ab173fbb411
 echo 10000 > /sys/fs/cgroup/cpu/4ab173fbb411/cpu.cfs_quota_us
@@ -12,6 +14,8 @@ func main() {
 	}
 }
 ```
+
+# Memory
 
 ```bash
 mkdir /sys/fs/cgroup/memory/4ab173fbb411
