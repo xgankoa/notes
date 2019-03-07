@@ -1,19 +1,31 @@
-```yml
-tolerations:
-- key: "key"
-  operator: "Equal"
-  value: "value"
-  effect: "NoSchedule"
+```bash
+mkdir /sys/fs/cgroup/cpu/4ab173fbb411
+echo 10000 > /sys/fs/cgroup/cpu/4ab173fbb411/cpu.cfs_quota_us
+echo $$ >> /sys/fs/cgroup/cpu/4ab173fbb411/tasks
 ```
 
+```go
+package main
+
+func main() {
+	for {
+	}
+}
 ```
-PUT _cluster/settings
-{
-  "transient": {
-    "cluster.routing.allocation.disk.watermark.low": "50gb",
-    "cluster.routing.allocation.disk.watermark.high": "30gb",
-    "cluster.routing.allocation.disk.watermark.flood_stage": "10gb",
-    "cluster.info.update.interval": "1m"
-  }
+
+```bash
+mkdir /sys/fs/cgroup/memory/4ab173fbb411
+echo 10485760 > /sys/fs/cgroup/memory/4ab173fbb411/memory.limit_in_bytes
+echo $$ >> /sys/fs/cgroup/memory/4ab173fbb411/tasks
+```
+
+```go
+package main
+
+func main() {
+	m := map[int]int{}
+	for i := 0; ; i++ {
+		m[i] = i
+	}
 }
 ```
